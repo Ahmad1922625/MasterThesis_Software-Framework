@@ -1,0 +1,28 @@
+# .gitattributes
+# Exclude OpenCV completely
+opencv/ export-ignore
+
+# Exclude all build outputs
+/build/ export-ignore
+.gradle/ export-ignore
+/.gradle/ export-ignore
+/.idea/ export-ignore
+/local.properties export-ignore
+**/intermediates/ export-ignore
+**/outputs/ export-ignore
+**/*.iml export-ignore
+
+# Exclude MobileFaceNet binary/model assets (optional - remove if needed for code logic)
+**/mobilefacenet*.tflite export-ignore
+**/mobilefacenet*.param export-ignore
+**/mobilefacenet*.bin export-ignore
+
+# Exclude large binary types
+*.so export-ignore
+*.a export-ignore
+*.aar export-ignore
+*.dll export-ignore
+*.exe export-ignore
+*.zip export-ignore
+*.jar export-ignore
+
